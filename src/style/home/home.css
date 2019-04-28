@@ -1,0 +1,153 @@
+#app>div:first-child{
+  padding-bottom:53px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: #F8F8F9;
+}
+ ul li{
+  flex: 1;
+  text-align: center;
+  height: 38px;
+  line-height: 35px;
+  text-align: center;
+}
+ ul li a{
+  text-decoration: none;
+  width: 42px;
+  display: inline-block;
+  color: #25292C;
+}
+ header{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  height: 34px;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom:2px;
+  background-color: #F8F8F9;
+}
+ header i{
+  flex: 1;
+  width: 15%;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+ header .icon-icontymicrophone{
+  font-size: 35px;
+}
+ header div{
+  width: 70%;
+}
+.search{
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-left: 15px;
+  padding-right:15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #E7E8EC;
+  border-radius: 20px;
+  line-height: 34px;
+  font-size: 14px;
+}
+.search::-webkit-input-placeholder{
+  text-align: center;
+  color: #BBBBBD;
+  line-height: 34px;
+  font-size: 14px;
+}
+.router-link-exact-active{
+  color: red !important;
+  border-bottom: 3px solid red;
+}
+
+
+
+.weui-tabbar[data-v-04c2046b]{
+  background-color: rgba(246,248,250,1);
+}
+.weui-grid{
+  color: red;
+}
+.weui-grid:before{
+  border-right: 0px !important;
+}
+.weui-grid__icon > .iconfont{
+  border: 1px solid red;
+  border-radius: 45px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.weui-grid__icon{
+  margin: 0 !important;
+  margin-left: 15px !important;
+}
+.weui-grid__label{
+  margin-top: 24px !important;
+}
+.vux-slider > .vux-indicator > a > .vux-icon-dot.active{
+  background-color: red !important;
+}
+.RecommendTitle{
+  height: 55px;
+  line-height:55px;
+  font-weight: 500;
+}
+.RecommendTitle::before{
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  line-height: 55px;
+  vertical-align: middle;
+  background-color: red;
+  margin-right: 15px;
+}
+.RecommendTitle::after{
+  content: '>';
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  width: 35px;
+  text-align: center;
+}
+.RecommendList a{
+  padding: 0;
+  margin-bottom: 15px;
+}
+.RecommendList a:nth-child(2),.RecommendList a:nth-child(4){
+  padding: 0 3px;
+}
+.RecommendList .weui-grid__icon{
+  display: inline-block;
+  width: 100%;
+  height: 115px;
+  margin: 0 !important;
+}
+.RecommendList .weui-grid{
+  text-align: center;
+}
+.RecommendList .weui-grid__label{
+  margin-top:0px !important;
+}
+.RecommendList .weui-grid__label span{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  white-space: pre-wrap;
+  text-align: left;
+  padding: 0px 5px;
+}
+.RecommendList .weui-grid:after{
+  height:0;
+}

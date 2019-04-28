@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr style="padding: 3px">
+  <td style="float: left;width: 300px">
+    <label style="height: 22.5px">医生姓名</label>
+    <div id="extend_participant">
+      <input type="hidden" id="[0].ParticipantList[1].ParticipantID" name="[0].ParticipantList[1].ParticipantID" value="5632">
+      <div id="ParticipantList[0].ProviderID" class="scombobox" style="width: 162px;">
+        <select name="ParticipantList[0].ProviderID" class="form-control input-sm fl text_w" onchange="providerChange(this)" style="color: rgb(85, 85, 85); display: none;">
+          <option value="-1">请选择</option>
+          <option value="222">邓迎璐</option>
+          <option value="220">马海云</option>
+          <option value="223">亓金晔</option>
+          <option value="235">王福凯</option>
+          <option value="219">王涵</option>
+          <option value="216">徐福洁</option>
+          <option value="224">张艳艳</option>
+          <option value="10000045">添加</option>
+        </select>
+        <div class="scombobox-dropdown-background" style="display: block;"></div>
+        <div class="scombobox-dropdown-arrow" style="display: block;"></div>
+        <input class="scombobox-display form-control" type="text" placeholder="请选择" id="ParticipantList[1].ProviderName" name="ParticipantList[1].ProviderName">
+        <div class="scombobox-list" style="max-width: 960px; white-space: normal;">
+          <p class="scombobox-hovered"><span class="scombobox-mainspan">请选择</span> <span></span></p>
+          <p><span class="scombobox-mainspan">邓迎璐</span> <span></span></p><p><span class="scombobox-mainspan">马海云</span> <span></span></p><p><span class="scombobox-mainspan">亓金晔</span> <span></span></p><p><span class="scombobox-mainspan">王福凯</span> <span></span></p><p><span class="scombobox-mainspan">王涵</span> <span></span></p><p><span class="scombobox-mainspan">徐福洁</span> <span></span></p><p><span class="scombobox-mainspan">张艳艳</span> <span></span></p><p><span class="scombobox-mainspan">添加</span> <span></span></p></div><input class="scombobox-value" type="hidden" value="-1" id="[0].ParticipantList[1].ParticipantID" name="[0].ParticipantList[1].ParticipantID"></div><input type="text" id="ParticipantList[1].ProviderName" name="ParticipantList[1].ProviderName" class="form-control input-sm mb0 wd100 ml5" style="display: none; " onblur="otherProviderCheck(this)"><div id="ParticipantList[1].ProviderID" class="scombobox" style="height: 0px;"><select name="ParticipantList[1].ProviderID" class="form-control input-sm fl text_w" onchange="providerChange(this)" style="display: none;"><option value="-1">请选择</option><option value="222">邓迎璐</option><option value="220">马海云</option><option value="223">亓金晔</option><option value="235">王福凯</option><option value="219">王涵</option><option value="216">徐福洁</option><option value="224">张艳艳</option><option value="10000045">添加</option></select><div class="scombobox-dropdown-background" style="display: block;"></div><div class="scombobox-dropdown-arrow" style="display: block;"></div><input class="scombobox-display form-control" type="text" placeholder="请选择"><div class="scombobox-list" style="max-width: 960px; white-space: normal;"><p><span class="scombobox-mainspan">请选择</span> <span></span></p><p><span class="scombobox-mainspan">邓迎璐</span> <span></span></p><p><span class="scombobox-mainspan">马海云</span> <span></span></p><p><span class="scombobox-mainspan">亓金晔</span> <span></span></p><p><span class="scombobox-mainspan">王福凯</span> <span></span></p><p><span class="scombobox-mainspan">王涵</span> <span></span></p><p><span class="scombobox-mainspan">徐福洁</span> <span></span></p><p><span class="scombobox-mainspan">张艳艳</span> <span></span></p><p><span class="scombobox-mainspan">添加</span> <span></span></p></div><input class="scombobox-value" type="hidden" value="-1"></div></div></td><td class="followleft" style="width: 300px"><label style="height: 22.5px">医务职能</label><div><select name="ParticipantList[1].RoleCID" id="ParticipantList[1].RoleCID" onchange="parChange(this)" class="form-control input-sm mb0 text_w"><option value="12001418" selected="selected">科主任</option><option value="10001190">主管医生</option><option value="10002203">手术医生</option><option value="10002204">麻醉医生</option><option value="10002205">护士</option><option value="12024068">影像科医生</option></select></div></td><td><a onclick="addParticipantInArray(this,'1')" class="add_line line_ico" name="addImg" style="float: right; display: inline-block;"></a><a onclick="delParticipantInArray(this)" class="rem_line line_ico" name="remImg" style="float: right; display: none;"></a></td></tr>
+</body>
+</html>

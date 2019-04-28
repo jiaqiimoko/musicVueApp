@@ -1,0 +1,70 @@
+#app>div:first-child{
+  padding-bottom: 53px;
+}
+.account{
+  background-color: #EEEFF0;
+}
+.account div{
+  background-color: #ffffff;
+}
+.vux-header{
+  background-color: #F8F8F9 !important;
+  border-bottom: 1px solid #E1E1E2;
+}
+.vux-header-title{
+  color: #25292C !important;
+}
+.iconfont.icon-youyinpin{
+  color: #25292c;
+}
+.loginBox{
+  padding-top:8px;
+  padding-bottom: 35px;
+}
+.loginBox button{
+  margin-top: 10px;
+  width: 95%;
+  line-height: 2.1;
+}
+.loginBox p{
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  font-family: Helvetica, sans-serif;
+}
+.myMessages{
+  margin: 10px 0px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 40px;
+}
+.account li::before,.myMessages::before{
+  content: '\2709';
+  float: left;
+  margin-left: -30px;
+  font-size: 23px;
+  color: grey;
+}
+.marketing,.tool,.share{
+  margin: 10px 0px;
+  margin-top: 0;
+  display: block;
+  width: 100%;
+}
+.marketing ul li,.tool ul li,.share ul li{
+  text-align: left;
+  border-bottom: 1px solid #E1E1E2;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 40px;
+}
+.marketing ul li:last-child,.tool ul li:last-child,.share ul li:last-child{
+  border-bottom: none;
+}
+.weui-tabbar{
+  background-color: white !important;
+}
+.account ul{
+  display: block;
+  background-color: none;
+}
