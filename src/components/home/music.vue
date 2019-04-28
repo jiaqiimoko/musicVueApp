@@ -45,19 +45,19 @@
     img:'static/images/music_swiper01.png',
   },{
     url:'javascript:;',
-    img:'/static/images/music_swiper02.png'
+    img:'static/images/music_swiper02.png'
   },{
     url:'javascript:;',
-    img:'/static/images/music_swiper03.png'
+    img:'static/images/music_swiper03.png'
   },{
     url:'javascript:;',
-    img:'/static/images/music_swiper04.png'
+    img:'static/images/music_swiper04.png'
   },{
     url:'javascript:;',
-    img:'/static/images/music_swiper05.png'
+    img:'static/images/music_swiper05.png'
   },{
     url:'javascript:;',
-    img:'/static/images/music_swiper06.png'
+    img:'static/images/music_swiper06.png'
   }]
 
   export default {
@@ -71,6 +71,7 @@
         this.swiper_index = index
       },
       getPersonalized(){
+	  axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';  //此处是增加的代码，设置请求头的类型
         this.axios.get(`http://musicapi.leanapp.cn/personalized`).then((response) => {
           this.personalized = response.data.result;
           this.listDetail = "http://musicapi.leanapp.cn/playlist/detail?id=" + response.data.result.id;
