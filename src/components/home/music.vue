@@ -42,7 +42,7 @@
   const swiperList = [
     {
     url:'javascript:;',
-    img:'/static/images/music_swiper01.png',
+    img:'static/images/music_swiper01.png',
   },{
     url:'javascript:;',
     img:'/static/images/music_swiper02.png'
