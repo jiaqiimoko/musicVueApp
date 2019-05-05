@@ -34,7 +34,7 @@
       }
     },
     created:function () {
-      this.axios.get(`http://musicapi.leanapp.cn/top/mv?limit=10`).then((response) => {
+      this.axios.get(`https://musicapi.leanapp.cn/top/mv?limit=10`).then((response) => {
         var data = response.data.data;
         $(data).each(function (i, d) {
           var count = String(d.playCount);
