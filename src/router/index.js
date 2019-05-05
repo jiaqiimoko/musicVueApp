@@ -5,6 +5,7 @@ import video from '@/components/home/video'
 import radio from '@/components/home/radio'
 import account from '@/components/account/account'
 import search from '@/components/search/search'
+import login from '@/components/account/login'
 
 
 Vue.use(Router)
@@ -31,6 +32,10 @@ export default new Router({
     {
       path: '/search',
       component:search
+    },
+    {
+      path: '/login',
+      component:login
     }
   ]
 })

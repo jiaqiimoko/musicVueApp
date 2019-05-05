@@ -4,7 +4,7 @@
     <div class="loginBox">
       <p>登录网易云音乐</p>
       <p>手机电脑多端同步，320k高音质无限下载</p>
-      <x-button type="default">立即登录</x-button>
+      <x-button type="default" link="/login">立即登录</x-button>
     </div>
     <div class="myMessages">我的消息</div>
     <div class="marketing">
