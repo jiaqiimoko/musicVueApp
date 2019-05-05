@@ -71,7 +71,7 @@
         this.swiper_index = index
       },
       getPersonalized(){
-	  axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';  //此处是增加的代码，设置请求头的类型
+	      this.axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';  //此处是增加的代码，设置请求头的类型
         this.axios.get(`http://musicapi.leanapp.cn/personalized`).then((response) => {
           this.personalized = response.data.result;
           this.listDetail = "http://musicapi.leanapp.cn/playlist/detail?id=" + response.data.result.id;
