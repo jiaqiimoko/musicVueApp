@@ -13,8 +13,8 @@
     <card v-for="item in video_list">
       <img slot="header" :src="item.cover" style="width:100%;display:block;">
       <div slot="content" class="card-padding">
-        <p style="font-size:16px;line-height:3;padding-left: 10px;font-weight: 600">{{item.name}}</p>
-        <p class="playCount">{{item.playCount}}</p>
+        <p class="playCount">播放次数：{{item.playCount}}</p>
+        <p style="font-size:16px;line-height: 25px;padding: 5px 10px;font-weight: 600">{{item.name}}</p>
       </div>
     </card>
   </div>
@@ -53,9 +53,12 @@
   .weui-panel{
     margin-top: 0;
   }
-  .playCount{
+  .card-padding{
     position: relative;
-    top: -75px;
+  }
+  .playCount{
+    position: absolute;
+    top: -25px;
     left: 15px;
     color: white;
     font-size: 12px;
