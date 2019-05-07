@@ -6,6 +6,7 @@ import radio from '@/components/home/radio'
 import account from '@/components/account/account'
 import search from '@/components/search/search'
 import login from '@/components/account/login'
+import list from '@/components/home/list'
 
 
 Vue.use(Router)
@@ -36,6 +37,11 @@ export default new Router({
     {
       path: '/login',
       component:login
+    },
+    {
+      path: '/list/:id',
+      name: 'List',
+      component: list
     }
   ]
 })

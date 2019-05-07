@@ -19,6 +19,12 @@
         <span slot="label">账号</span>
       </tabbar-item>
     </tabbar>
+
+
+
+    <video controls="controls" autoplay="autoplay" name="media">
+      <source src="https://music.163.com/song/media/outer/url?id=308430.mp3" type="audio/mpeg">
+    </video>
   </div>
 </template>
 

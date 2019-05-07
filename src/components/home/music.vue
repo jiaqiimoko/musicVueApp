@@ -29,11 +29,10 @@
       <span>推荐歌单</span>
     </div>
     <grid :cols="3" class="RecommendList">
-      <grid-item :label="item.name" v-for="item in personalized" :key="item.id" :href="'http://musicapi.leanapp.cn/playlist/detail?id=' + item.id">
+      <grid-item :label="item.name" v-for="item in personalized" :key="item.id" :link='/list/+item.id'>
           <img slot="icon" :src="item.picUrl">
       </grid-item>
     </grid>
-    <div style="height: 60px;"></div>
   </div>
 </template>
 
