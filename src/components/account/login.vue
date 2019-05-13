@@ -4,7 +4,7 @@
       <x-input type="tel" v-model="loginname" placeholder="手机号" :style="{'border-bottom':'1px solid #fff;'}"></x-input>
       <x-input type="password" v-model="password" placeholder="密码" :style="{'border-bottom':'1px solid #fff;'}"></x-input>
     <!--</group>-->
-    <x-button @click.native="login">ojbk</x-button>
+    <x-button @click.native="login">ok~~</x-button>
     <p>输入网易云音乐手机号与密码，显示你的昵称：</p>{{nickname}}
   </div>
 </template>

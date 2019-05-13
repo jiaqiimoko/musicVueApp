@@ -95,6 +95,7 @@ ul{
 .weui-grid__label{
   margin-top: 24px !important;
   min-height: 38px;
+  max-height: 38px;
 }
 .vux-slider > .vux-indicator > a > .vux-icon-dot.active{
   background-color: red !important;
