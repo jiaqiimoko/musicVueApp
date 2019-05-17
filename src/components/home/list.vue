@@ -1,7 +1,11 @@
 <template>
   <div>
     <group>
-      <cell-box v-for="(item,index) in musicList" >{{index + 1}} {{item.name}}</cell-box>
+      <cell-box v-for="(item,index) in musicList" >
+        <span v-on:click="playMusic(item)">
+          {{index + 1}} {{item.name}}
+        </span>
+      </cell-box>
     </group>
 
     <!--<audio src='https://music.163.com/song/media/outer/url?id=308430.mp3' id="audio"></audio>-->
@@ -26,6 +30,14 @@
             console.log(response.data.playlist.tracks)
               this.musicList = response.data.playlist.tracks
           })
+      },
+      methods:{
+        playMusic(item){
+          this.msrc = `https://music.163.com/song/media/outer/url?id=${item.id}.mp3`;
+          document.body.addEventListener('click', function(){
+            document.getElementById('music').play();
+          });
+        }
       }
     }
 </script>

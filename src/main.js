@@ -14,6 +14,17 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App },
+  data(){
+    return{
+        msrc:''
+    }
+  },
+  mounted() {
+    /*document.body.addEventListener('click', function(){
+      console.log(document.getElementById('music'))
+      document.getElementById('music').play();
+    });*/
+  }
 })
 

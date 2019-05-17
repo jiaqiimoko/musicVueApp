@@ -20,11 +20,7 @@
       </tabbar-item>
     </tabbar>
 
-
-
-    <video controls="controls" autoplay="autoplay" name="media">
-      <source src="https://music.163.com/song/media/outer/url?id=308430.mp3" type="audio/mpeg">
-    </video>
+    <audio id="music" autoplay="autoplay" hidden="true" data-src="msrc"></audio>
   </div>
 </template>
 
@@ -49,5 +45,8 @@
   }
   .weui-tabbar:before{
     content: none;
+  }
+  video{
+    display: none;
   }
 </style>
