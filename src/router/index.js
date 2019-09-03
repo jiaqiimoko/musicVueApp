@@ -7,6 +7,7 @@ import account from '@/components/account/account'
 import search from '@/components/search/search'
 import login from '@/components/account/login'
 import list from '@/components/home/list'
+import player from '@/components/player/player'
 
 
 Vue.use(Router)
@@ -42,6 +43,11 @@ export default new Router({
       path: '/list/:id',
       name: 'List',
       component: list
+    },
+    {
+      path: '/player',
+      name: 'player',
+      component: player
     }
   ]
 })
